@@ -1,0 +1,57 @@
+:root {
+  --darkMain: #00449E;
+  --textMain: #357EDD;
+  --lightMain: #96CCFF;
+  --background: #F6FFFE;
+  --unsaturated: #616473;
+  --saturated: #da5e58;
+  --light: #f6d0a9;
+}
+
+body {
+  background-color: var(--background);
+}
+
+p {
+  color: var(--darkMain);
+}
+
+h2 {
+  color: var(--textMain);
+}
+
+#titleText {
+  color: var(--textMain)
+}
+
+#headerImg {
+  border-radius: 50%;
+  height: 240px;
+  width: 240px;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25%;
+  display: inline;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-github {
+  background: #242424;
+  color: white;
+}
+
+#projectImg {
+  height: 200px;
+  width: 200px;
+}
