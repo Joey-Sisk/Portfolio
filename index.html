@@ -12,209 +12,248 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon/favicon-16x16.png"
+    />
     <link rel="manifest" href="/site.webmanifest" />
   </head>
   <body>
-    <!-- Header -->
-    <div class="mt5 mh4 h-100 flex justify-around flex-wrap flex-nowrap-l">
-      <div class="mw-100 fl w-60-l">
-        <h1 id="titleText" class="avenir underline tc f-headline lh-solid">
-          JOEY SISK
-        </h1>
-      </div>
-      <div class="mw-100 fl w-40-l">
-        <img
-          src="./assets/images/headshot.png"
-          alt="Headshot"
-          id="headerImg"
-          class="shadow-5"
-        />
-      </div>
+    <!-- Nav Bar -->
+    <div class="bg-navy o-80 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l zTop">
+      <nav class="f5 fw6 ttu tracked">
+        <a class="link dim white dib mr3 avenir" href="#header" title="Home"
+          >Home</a
+        >
+        <a class="link dim white dib mr3 avenir" href="#projects" title="About"
+          >Projects</a
+        >
+        <a class="link dim white dib avenir" href="#contact" title="Contact"
+          >Contact</a
+        >
+      </nav>
     </div>
 
-    <div class="mt5-l">
-      <br />
-    </div>
-
-    <!-- Section A -->
-    <div
-      class="backgroundAnimate mt6 flex justify-around flex-wrap flex-nowrap-l"
-    >
-      <div class="flex items-center justify-around">
-        <div class="mw-100 fl w-20-l">
-          <a href="#" class="fa fa-linkedin ma4 dim"></a>
+    <div id="grad1">
+      <!-- Header -->
+      <header
+        id="header"
+        class="mw-100 mh4 h-100 pt6-l pt4 halfHeight sectionDivs"
+      >
+        <div class="mw-100 fl w-60-l">
+          <h1 id="titleText" class="avenir underline tc f-headline lh-solid">
+            JOEY SISK
+          </h1>
         </div>
-        <div class="mw-100 fl w-20-l">
-          <a href="#" class="fa fa-github ma4 dim"></a>
+        <div class="mw-100 mb1-l mb4 fl w-40-l">
+          <img
+            src="./assets/images/headshot.png"
+            alt="Headshot"
+            id="headerImg"
+            class="shadow-5"
+          />
+        </div>
+      </header>
+
+      <!-- Section A -->
+      <div class="mw-100 bt bw2 b--lightest-blue halfHeight sectionDivs">
+        <div class="flex items-center justify-around">
+          <div class="mw-100 fl w-20-l">
+            <a
+              href="https://www.linkedin.com/in/joey-sisk-8933b548/"
+              class="fa fa-linkedin ma4 dim"
+            ></a>
+          </div>
+          <div class="mw-100">
+            <a
+              href="https://github.com/Joey-Sisk"
+              class="fa fa-github ma4 dim"
+            ></a>
+          </div>
+        </div>
+
+        <div class="mw-100 flex justify-around">
+          <p class="measure-wide avenir tc pt6-l pt3 f4 mt4 lh-copy">
+            I am a student web developer, musician, artist, and technician
+            working in and around Austin, TX. I've had the good fortune of
+            performing with some of the best musicians in the Austin area over
+            the last 9 years. I've recently turned down a new path in order to
+            better myself by signing up for UT's full stack development course
+            and learning JavaScript as well as many of the supporting systems
+            related to it.
+          </p>
         </div>
       </div>
-
-      <div class="mw-100 h10 fl w-60-1">
-        <p class="measure avenir tc f4 pa4 mt4 lh-copy">
-          I am a student web developer, musician, artist, and technician working
-          in and around Austin, TX. I've had the good fortune of performing with
-          some of the best musicians in the Austin area over the last 9 years.
-          I've recently turned down a new path in order to better myself by
-          signing up for UT's full stack development course and learning
-          JavaScript as well as many of the supporting systems related to it.
-        </p>
+    </div>
+    <div id="grad2">
+      <!-- Section B -->
+      <div id="projects" class="ph4-l ph3 pt6-l pt5 fullHeight sectionDivs">
+        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
+          <a href="https://joey-sisk.github.io/PasswordGenerator/"
+            ><img
+              src="./assets/images/passwordGen.jpg"
+              alt="Password Generator"
+              class="mw-100 grow"
+          /></a>
+          <h2 class="avenir tc bt bl br br4 br--top">Password Generator</h2>
+          <p class="measure avenir tc lh-title">
+            An application that requests user inputs for length and character
+            type then returns a randomly generated password.
+          </p>
+        </div>
+        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
+          <a href="https://joey-sisk.github.io/WorkDayScheduler/"
+            ><img
+              src="./assets/images/schedule.jpg"
+              alt="Work Day Scheduler"
+              class="mw-100 grow"
+          /></a>
+          <h2 class="avenir tc bt bl br br4 br--top">Workday Scheduler</h2>
+          <p class="measure avenir tc lh-title">
+            A handy scheduler for planning out your workday. remember your daily
+            tasks and knows how far into your work day you currently are.
+          </p>
+        </div>
+        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
+          <a href="https://joey-sisk.github.io/WeatherDashboard/"
+            ><img
+              src="./assets/images/weatherApp.jpg"
+              alt="Weather Dashboard"
+              class="mw-100 grow"
+          /></a>
+          <h2 class="avenir tc bt bl br br4 br--top">Weather Dashboard</h2>
+          <p class="measure avenir tc lh-title">
+            An in browser weather application that will accept a location and
+            output weather for your location and for the next 5 days.
+          </p>
+        </div>
+        <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
+          <a href="https://joey-sisk.github.io/OnStage/"
+            ><img
+              src="./assets/images/onStage.jpg"
+              alt="onStage"
+              class="mw-100 grow"
+          /></a>
+          <h2 class="avenir tc bt bl br br4 br--top">OnStage Events</h2>
+          <p class="measure avenir tclh-title">
+            A resource for researching bands and upcoming events. Shows
+            location, some upcoming gigs, and the months bands are most active.
+          </p>
+        </div>
       </div>
     </div>
 
-    <div class="mt5-l">
-      <br />
-    </div>
-
-    <!-- Section B -->
-    <div class="mt6 ph4-l ph3 flex justify-around flex-wrap flex-nowrap-l">
-      <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6">
-        <a href="https://joey-sisk.github.io/PasswordGenerator/"
-          ><img
-            src="./assets/images/passwordGen.jpg"
-            alt="Password Generator"
-            class="mw-100 grow"
-        /></a>
-        <h2 class="avenir tc bt bl br br4 br--top">Password Generator</h2>
-        <p class="measure avenir tc lh-title">
-          An application that requests user inputs for length and character type
-          then returns a randomly generated password.
-        </p>
-      </div>
-      <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6">
-        <a href="https://joey-sisk.github.io/WorkDayScheduler/"
-          ><img
-            src="./assets/images/schedule.jpg"
-            alt="Work Day Scheduler"
-            class="mw-100 grow"
-        /></a>
-        <h2 class="avenir tc bt bl br br4 br--top">Workday Scheduler</h2>
-        <p class="measure avenir tc lh-title">
-          A handy scheduler for planning out your workday. remember your daily
-          tasks and knows how far into your work day you currently are.
-        </p>
-      </div>
-      <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6">
-        <a href="https://joey-sisk.github.io/WeatherDashboard/"
-          ><img
-            src="./assets/images/weatherApp.jpg"
-            alt="Weather Dashboard"
-            class="mw-100 grow"
-        /></a>
-        <h2 class="avenir tc bt bl br br4 br--top">Weather Dashboard</h2>
-        <p class="measure avenir tc lh-title">
-          An in browser weather application that will accept a location and
-          output weather for your location and for the next 5 days.
-        </p>
-      </div>
-      <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6">
-        <a href="https://joey-sisk.github.io/OnStage/"
-          ><img
-            src="./assets/images/onStage.jpg"
-            alt="onStage"
-            class="mw-100 grow"
-        /></a>
-        <h2 class="avenir tc bt bl br br4 br--top">OnStage Events</h2>
-        <p class="measure avenir tclh-title">
-          A resource for researching bands and upcoming events. Shows location,
-          some upcoming gigs, and the months bands are most active.
-        </p>
-      </div>
-    </div>
-
-    <!-- Section C -->
-    <div
-      class="backgroundAnimate mt6 pv4 flex justify-around flex-wrap flex-nowrap-l"
-    >
-      <div class="mw-100 fl br4 ml6-l pl3 pr6">
-        <h2 class="list measure avenir f3 washed-blue">Skills:</h2>
-        <ul class="list measure avenir f4 washed-blue lh-copy">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>jQuery</li>
-          <li>Bootstrap</li>
-          <li>Tachyons</li>
-        </ul>
-      </div>
-
-      <div class="mw-100 fl">
-        <p class="measure avenir tc f4 pa4 mt4 lh-copy">
-          My studies really took off when I began attending the UT Austin coding
-          bootcamp but I've been spending my time learning and devoping for a
-          long time. Ever since I started down this path I have found so much
-          gratification and enjoyment from expanding my skillset and using the
-          knowledge I've gained along the way.
-        </p>
-      </div>
-    </div>
-
-    <!-- Section D -->
-    <div class="mt6 flex justify-center flex-wrap flex-nowrap-l">
-      <div class="mw-100 mh5-l fl w50-l">
-        <a href="https://www.joeysisk.com/"
-          ><img
-            src="./assets/images/abstractShattered.png"
-            alt="Weather Dashboard"
-            id="personalWebsiteLinkImage"
-            class="mw-100 grow"
-        /></a>
-        <h2 class="avenir tc pb2 bb bl br br4 br--bottom">My Music</h2>
-      </div>
-      <div class="mw-100 mh5-l fl w50-l">
-        <article class="pa4 black-80">
-          <form
-            action="https://formspree.io/f/xleowywe"
-            method="POST"
-            accept-charset="utf-8"
+    <div id="grad3">
+      <!-- Section C -->
+      <div id="contact" class="pt5 halfHeight sectionDivs">
+        <div class="mw-100 fl w-40-l w-100 ml4-l mh1-l mh6-m mh1">
+          <ul
+            class="list measure avenir f4 blue lh-copy pa4 mt5-l ba br4 bw2 b--lightest-blue"
           >
-            <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
-              <legend class="ph0 mh0 fw6 clip">Sign Up</legend>
-              <div class="mt3">
-                <label
-                  class="db fw4 avenir blue lh-copy f6"
-                  name="_replyto"
-                  for="email-address"
-                  >Email address</label
-                >
-                <input
-                  class="pa2 avenir input-reset ba bg-transparent w-100 measure"
-                  type="email"
-                  name="email-address"
-                  id="email-address"
-                />
-              </div>
-              <div class="mt3">
-                <label class="db fw4 avenir blue lh-copy f6" for="password"
-                  >Message</label
-                >
-                <input
-                  class="pa2 h3 avenir input-reset ba bg-transparent"
-                  name="message"
-                  type="Message"
-                  name="Message"
-                  id="message"
-                />
-              </div>
-            </fieldset>
-            <div class="mt3">
-              <input
-                class="b ph3 pv2 avenir input-reset ba lightest-blue b--black bg-navy grow pointer f6"
-                type="submit"
-                value="Submit"
-              />
-            </div>
-          </form>
-        </article>
+            <li class="tc">Skills:</li>
+            <li class="tr">HTML</li>
+            <li class="tl">CSS</li>
+            <li class="tc">JavaScript</li>
+            <li class="tl">jQuery</li>
+            <li class="tr">Bootstrap</li>
+            <li class="tl">Tachyons</li>
+          </ul>
+        </div>
+
+        <div class="mw-100 flex flex items-center">
+          <p class="measure avenir blue tc f4 pa4 mt4 lh-copy">
+            My studies really took off when I began attending the UT Austin
+            coding bootcamp but I've been spending my time learning and devoping
+            for a long time. Ever since I started down this path I have found so
+            much gratification and enjoyment from expanding my skillset and
+            using the knowledge I've gained along the way.
+          </p>
+        </div>
       </div>
-    </div>
+
+      <!-- Section D -->
+      <div id="bottom" class="pt4 halfHeight sectionDivs">
+        <div class="mw-100 mh5-l fl w50-l">
+          <a href="https://www.joeysisk.com/"
+            ><img
+              src="./assets/images/abstractShattered.png"
+              alt="Weather Dashboard"
+              id="personalWebsiteLinkImage"
+              class="mw-100 grow"
+          /></a>
+          <h2 class="avenir tc pb2 bb bl br br4 br--bottom">My Music</h2>
+        </div>
+        <div class="mw-100 mh5-l fl w50-l">
+          <article class="pa4 black-80">
+            <form
+              action="https://formspree.io/f/xleowywe"
+              method="POST"
+              accept-charset="utf-8"
+            >
+              <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
+                <legend class="ph0 mh0 fw6 clip">Sign Up</legend>
+                <div class="mt3">
+                  <label
+                    class="db fw4 avenir blue lh-copy f6"
+                    name="_replyto"
+                    for="email-address"
+                    >Email address</label
+                  >
+                  <input
+                    class="pa2 avenir input-reset ba b--blue bg-transparent w-100 measure"
+                    type="email"
+                    name="email-address"
+                    id="email-address"
+                  />
+                </div>
+                <div class="mt3">
+                  <label class="db fw4 avenir blue lh-copy f6" for="password"
+                    >Message</label
+                  >
+                  <input
+                    class="pa2 h3 avenir input-reset ba b--blue bg-transparent"
+                    name="message"
+                    type="Message"
+                    name="Message"
+                    id="message"
+                  />
+                </div>
+              </fieldset>
+              <div class="mt3">
+                <input
+                  class="b ph3 pv2 avenir input-reset ba lightest-blue b--black bg-blue grow pointer f6"
+                  type="submit"
+                  value="Submit"
+                />
+              </div>
+            </form>
+          </article>
+        </div>
+      </div>
+    </civ>
 
     <!-- Footer -->
-    <div class="m-100 mt5"></div>
+    <div class="m-100 bg-washed-red"></div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
