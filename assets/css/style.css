@@ -11,6 +11,11 @@
   --light: #f6d0a9;
 }
 
+body {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
 p {
   color: var(--textMain);
 }
