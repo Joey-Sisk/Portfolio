@@ -10,7 +10,7 @@ The following readme contains these sections:
 
 ## Screenshot
 
-![Profile Header](./assets/images/screenshot1.png)
+![Profile Header](./assets/images/screenshot.png)
 ![Profile Body](./assets/images/screenshot2.png)
 
 ## Usage
