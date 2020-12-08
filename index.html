@@ -35,21 +35,35 @@
   </head>
   <body>
     <!-- Nav Bar -->
-    <div class="bg-navy o-80 fixed w-100 ph3 pv3 pv4-ns ph4-m ph5-l zTop">
+    <div
+      id="navBar"
+      class="bg-navy o-80 fixed inline tc tl-l w-100 ph3 pv3 pv4-ns ph4-m ph5-l zTop"
+    >
       <nav class="f5 fw6 ttu tracked">
-        <a class="link dim white dib mr3 avenir" href="#header" title="Home"
-          >Home</a
-        >
-        <a class="link dim white dib mr3 avenir" href="#projects" title="About"
-          >Projects</a
-        >
-        <a class="link dim white dib avenir" href="#contact" title="Contact"
-          >Contact</a
-        >
+        <ul id="navList" class="list">
+          <li class="dib">
+            <a class="link dim white dib mr3 avenir" href="#header" title="Home"
+              >Home</a
+            >
+          </li>
+          <li class="dib">
+            <a
+              class="link dim white dib mr3 avenir"
+              href="#projects"
+              title="About"
+              >Projects</a
+            >
+          </li>
+          <li class="dib">
+            <a class="link dim white dib avenir" href="#contact" title="Contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
       </nav>
     </div>
 
-    <div id="grad1">
+    <div id="keepAllCentered">
       <!-- Header -->
       <header
         id="header"
@@ -99,8 +113,7 @@
           </p>
         </div>
       </div>
-    </div>
-    <div id="grad2">
+
       <!-- Section B -->
       <main id="projects" class="ph4-l ph3 pt6-l pt5 fullHeight sectionDivs">
         <div class="mw-100 h-100 fl w-25-l w-50-m pa1 mw6" data-aos="zoom-in">
@@ -156,9 +169,7 @@
           </p>
         </div>
       </main>
-    </div>
 
-    <div id="grad3">
       <!-- Section C -->
       <div id="contact" class="pt5 halfHeight sectionDivs">
         <div class="mw-100 fl w-40-l w-100 ml4-l mh1-l mh6-m mh1">

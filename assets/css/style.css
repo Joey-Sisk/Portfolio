@@ -12,8 +12,7 @@
 }
 
 body {
-  max-width: 64rem;
-  margin: 0 auto;
+  background-image: linear-gradient(var(--background1), var(--background2), var(--background3), var(--background4));
 }
 
 p {
@@ -78,16 +77,22 @@ h2 {
   width: 300px;
 }
 
-#grad1 {
-  background-image: linear-gradient(var(--background1), var(--background2));
+#keepAllCentered {
+  max-width: 64rem;
+  margin: 0 auto;
 }
 
-#grad2 {
-  background-image: linear-gradient(var(--background2), var(--background3));
+#navBar {
+  width: 100%;
+  float: left;
+  margin: 0 0 1em 0;
+  padding: 0;
 }
 
-#grad3 {
-  background-image: linear-gradient(var(--background3), var(--background4));;
+#navList {
+  max-width: 64rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 60em) {
@@ -100,13 +105,4 @@ h2 {
   .halfHeight {
     height: 50vh;
   }
-}
-
-@media screen and (max-width: 60em) and (min-width: 30em) {
-  /* .fullHeight {
-    height: 100%;
-  }
-  .halfHeight {
-    height: 100%;
-  } */
 }
