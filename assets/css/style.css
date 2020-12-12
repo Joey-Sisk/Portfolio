@@ -2,17 +2,23 @@
   --darkMain: #00449e;
   --textMain: #357edd;
   --lightMain: #96ccff;
-  --background1: #F6FFFE;
-  --background2: #FFFCEB;
-  --background3: #E8FDF5;
-  --background4: #FFDFDF;
-  --unsaturated: #616473;
+  --background1: #f6fffe;
+  --background2: #fffceb;
+  --background3: #e8fdf5;
+  --background4: #ffdfdf;
+  --unsaturated1: #d7dae7;
+  --unsaturated2: #b9bbc7;
   --saturated: #da5e58;
   --light: #f6d0a9;
 }
 
 body {
-  background-image: linear-gradient(var(--background1), var(--background2), var(--background3), var(--background4));
+  background-image: linear-gradient(
+    var(--background1),
+    var(--background2),
+    var(--background3),
+    var(--background4)
+  );
 }
 
 p {
@@ -60,6 +66,12 @@ h2 {
 
 .zTop {
   z-index: 10;
+}
+
+#skills {
+  background-image: linear-gradient(var(--unsaturated1), var(--unsaturated2));
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 #titleText {
